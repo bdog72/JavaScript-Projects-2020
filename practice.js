@@ -1,40 +1,14 @@
 //
 //
 
-const store = [
-  {
-    product: 'laptop',
-    value: 1000,
-    count: 3,
-  },
-  {
-    product: 'desktop',
-    value: 1500,
-    count: 4,
-  },
-  {
-    product: 'mobile',
-    value: 500,
-    count: 10,
-  },
-];
+// const a = [1, 2, 3];
+// const b = [4, 5, 6];
+// const d = [7, 8, 9];
 
-const totalValueFromStore = store.reduce((acc, item) => {
-  return acc + item.value * item.count;
-}, 0);
+// const str = 'coding is fun';
+// const numbers = [1, 2, 3, 4, 5];
+// const numbers = [74, 18, 10, 5, 84, 24, 105];
 
-console.log(totalValueFromStore);
-
-// const numbers = [11, 2, 3, 4, 5, 6, 7];
-
-// const max = numbers.reduce(callback, -Infinity);
-
-// function callback(accumulator, value) {
-//   if (accumulator > value) {
-//     return accumulator;
-//   } else {
-//     return value;
-//   }
-// }
-
-// console.log(max);
+// const names = ['Bozo', 'Brian', 'Molly', 'Josie', 'Crystal'];
+// const fruits = ['Apple', 'Mango', 'Orange'];
+// const countries = ['Romania', 'USA', 'India'];
