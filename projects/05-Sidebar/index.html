@@ -3,26 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar</title>
-    <!-- font awesome -->
     <link
       rel="stylesheet"
-      href="./fontawesome-free-5.12.0-web/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
     />
-    <!-- styles -->
     <link rel="stylesheet" href="styles.css" />
+    <title>Sidebar</title>
   </head>
   <body>
-    <div class="nav-center">
-      <div class="nav-header">
-        <!-- <img src="./logo.svg" class="logo" alt="logo" /> -->
-        <h3>NavBar</h3>
-        <button class="nav-toggle">
-          <div class="fas fa-bars"></div>
+    <button class="sidebar-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <!-- links -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h3>Sidebar</h3>
+        <button class="close-btn">
+          <div class="fas fa-times"></div>
         </button>
       </div>
       <ul class="links">
-        <li class="">
+        <li>
           <a href="index.html">home</a>
         </li>
         <li>
@@ -63,9 +66,7 @@
           </a>
         </li>
       </ul>
-    </div>
-    <!-- <a class="home-anchor" href="/">Home</a> -->
-    <!-- javascript -->
+    </aside>
     <script src="app.js"></script>
   </body>
 </html>
