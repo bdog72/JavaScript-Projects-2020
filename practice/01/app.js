@@ -1,119 +1,92 @@
 //
 //
+console.log(123);
 
-console.log('Bozo');
+const people = [
+  {
+    name: 'bozo',
+    age: 47,
+    position: 'developer',
+  },
+  {
+    name: 'bozo1',
+    age: 48,
+    position: 'developer1',
+  },
+  {
+    name: 'bozo2',
+    age: 49,
+    position: 'developer2',
+  },
+  {
+    name: 'bozo3',
+    age: 50,
+    position: 'developer3',
+  },
+];
 
-const gas = [20, 40, 100, 30];
-const food = [10, 40, 50];
-
-function calculateTotal(array) {
-  let total = 0;
-  for (let i = 0; i < array.length; i++) {
-    total += array[i];
-  }
-  if (total > 100) {
-    console.log(`Whoa, you are out of control`);
-  } else {
-    console.log(`Whoa, you are good to go`);
-  }
-  return total;
-}
-
-const gasTotal = calculateTotal(gas);
-const foodTotal = calculateTotal(food);
-const randomTotal = calculateTotal([100, 200, 25]);
-
-console.log({
-  gas: gasTotal,
-  food: foodTotal,
-  random: randomTotal,
+const youngPeople = people.filter((person) => {
+  return person.age <= 48;
 });
 
-console.log(gasTotal);
-console.log(foodTotal);
-console.log(randomTotal);
+console.log(youngPeople);
 
-// const names = ['bozo', 'molly', 'josie', 'bDog'];
-// const lastName = 'shakeAndBake';
+const developers = people.filter((person) => person.position === 'developer');
 
-// let newArray = [];
+console.log(developers);
+// const ages = people.map(function (person) {
+//   // console.log(person);
+//   return person.age / 10;
+// });
 
-// for (let i = 0; i < names.length; i++) {
-//   let result = newArray.push(names);
-//   const fullName = `${names[i]} ${lastName}`;
-//   newArray.push(fullName);
-// }
-// console.log(newArray);
+// console.log(ages);
 
-// let names = ['john', 'bozo', 'barry', 'olga', 'ben'];
+// const newPeople = people.map((person) => {
+//   return {
+//     firstName: person.name.toUpperCase(),
+//     oldAge: person.age + 20,
+//   };
+// });
 
-// console.log(names.length);
-// console.log(names[names.length - 1]);
+// console.log(newPeople);
 
-// const lastNames = ['pepper', 'onion', 'banana'];
+// const names = people.map((person) => {
+//   return `
+//     <h1>${person.name}</h1>
+//   `;
+// });
 
-// const allNames = names.concat(lastNames);
+// document.body.innerHTML = names.join('');
 
-// console.log(allNames.push('Moo'));
-// console.log(allNames);
+// console.log(names);
 
-// allNames.splice(1,2)
-// console.log(allNames);
-
-// const allNames = names.concat(lastNames).reverse();
-// console.log(allNames.reverse());
-
-// allNames.unshift('suzy');
-// console.log(allNames);
-// allNames.shift();
-// console.log(allNames);
-
-// const name = 'Bozo';
-// const age = 47;
-// const sentence = `Hey it's ${name} and he is ${age} years old`;
-
-// console.log(sentence);
-
-// const value = `${2 + 2}`;
-// console.log(value);
-
-// let text = ` Bozo Beak`;
-
-// let result = text.length;
-// console.log(text.toLowerCase());
-// console.log(text.toUpperCase());
-// console.log(text.charAt(3));
-// console.log(text.charAt(text.length - 1));
-// console.log(text.indexOf('o'));
-// console.log(text.trim().toLowerCase().startsWith('b'));
-// console.log(text.startsWith(' Bozo'));
-// console.log(text.includes('ozo B'));
-// console.log(text.slice(2, 3));
-// console.log(text.slice(-3));
-
-// let amount;
-// amount = 10;
-
-// while (amount > 0) {
-//   console.log(`I have ${amount} dollars. And I am happy`);
-//   amount--;
+// function showPerson(person) {
+//   console.log(person.position.toUpperCase());
 // }
 
-// let money;
-// money = 0;
+// people.forEach(showPerson);
 
-// do {
-//   console.log(`I have ${money} dollars. And I am happy`);
-//   money++;
-// } while (money < 5);
+// people.forEach((person) => console.log(person.position.toUpperCase()));
 
-// for (let i = 0; i < 10; i++) {
-//   console.log(`I have ${i} dollars. And I am happy`);
+// people.forEach((person) => {
+//   console.log(person.position.toUpperCase());
+// });
+
+// console.log(people);
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// for (let i = 0; i < numbers.length; i++) {
+//   console.log(numbers[i]);
 // }
 
-// let number;
-// number = 11;
+// numbers.forEach((num) => {
+//   console.log(num);
+// });
 
-// for (number; number >= 0; number--) {
-//   console.log(`I have ${number} dollars. And I am happy`);
-// }
+// console.log('--------');
+
+// numbers.map((num) => {
+//   console.log(num);
+//   // return num;
+// });
