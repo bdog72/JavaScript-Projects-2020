@@ -2,42 +2,36 @@
 //
 // console.log(1234);
 
-// const number = 4.56789;
-// let result = Math.floor(number);
-// const number = 4.56789;
-// let result = Math.floor(Math.random() * 3 + 1);
+/////////////////////////////////////////////////////////////////
+// const headings = document.getElementsByTagName('h2');
+// headings[0].style.color = 'red';
+// // console.log(headings.length);
 
-// console.log(result);
+// const items = document.getElementsByTagName('li');
 
+// // items.forEach((item) => {
+// //   console.log(item);
+// // });
+// items[2].style.color = 'orange';
+// const betterItems = [...items];
 
+// betterItems.forEach((item) => {
+//   // console.log(item);
+// });
 
-const people = [
-  {
-    name: 'bozo',
-    age: 47,
-    position: 'developer',
-    id: 1,
-    salary: 10,
-  },
-  {
-    name: 'bozo1',
-    age: 48,
-    position: 'developer1',
-    id: 2,
-    salary: 20,
-  },
-  {
-    name: 'bozo2',
-    age: 49,
-    position: 'developer2',
-    id: 3,
-    salary: 30,
-  },
-  {
-    name: 'bozo3',
-    age: 50,
-    position: 'developer3',
-    id: 4,
-    salary: 40,
-  },
-];
+// console.log(items);
+// console.log(betterItems);
+
+////////////////////////////////////////////
+// const h1 = document.getElementById('title');
+// h1.style.color = 'red';
+// const btn = document.getElementById('btn');
+// btn.style.backgroundColor = 'blue';
+// btn.style.color = 'white';
+
+////////////////////////////////////////////
+// const btn = document.querySelector('#btn');
+// btn.addEventListener('click', () => {
+//   // document.body.style.backgroundColor = 'blue';
+//   document.body.classList.toggle('body');
+// });
