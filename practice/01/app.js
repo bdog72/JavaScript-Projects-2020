@@ -2,23 +2,25 @@
 //
 // console.log(1234);
 
-const btn = document.querySelector('.btn');
+const friends = ['a', 'b', 'c'];
+localStorage.setItem('friends', JSON.stringify(friends));
 
-const heading = document.querySelector('h2');
+const values = JSON.parse(localStorage.getItem('friends'));
+console.log(values);
 
-const changeColors = () => {
-  let hasClass = heading.classList.contains('red');
-  if (hasClass) {
-    heading.classList.remove('red');
-  } else {
-    heading.classList.add('red');
-  }
-};
+// localStorage.setItem('name', 'bozo');
+// localStorage.setItem('job', 'developer');
 
-btn.addEventListener(
-  'click',
-  changeColors
-  // heading.classList.add('red');
-  // heading.classList.toggle('red');
-  // document.body.classList.toggle('red');
-);
+// const name = localStorage.getItem('name');
+// console.log(name);
+
+// const form = document.getElementById('form');
+// const name = document.getElementById('name');
+// const password = document.getElementById('password');
+
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   console.log('Form Submitted');
+//   console.log(name.value);
+//   console.log(password.value);
+// });
