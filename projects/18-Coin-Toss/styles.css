@@ -1,0 +1,38 @@
+/*  */
+/*  */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* .container {
+  display: grid;
+  place-items: center;
+  height: 80vh;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0 5px;
+  font-size: 2rem;
+  width: 150px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: silver;
+  color: #000;
+}
+
+.message {
+  text-align: center;
+}
