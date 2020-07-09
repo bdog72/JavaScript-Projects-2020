@@ -1,0 +1,27 @@
+/*  */
+/*  */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.animal {
+  display: inline-block;
+  margin: 0 20px;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.active {
+  border: 1px solid red !important;
+  color: red !important;
+}
