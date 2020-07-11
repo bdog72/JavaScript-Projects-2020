@@ -1,0 +1,23 @@
+/*  */
+/*  */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.main .a-body {
+  display: none;
+  padding: 5px;
+  border: 1px solid #eee;
+}
+
+.main .active .a-body {
+  display: block;
+}
+
+.main .a-head {
+  background-color: #333;
+  padding: 5px;
+  font-size: 1.6em;
+  margin: 5px 0;
+  color: #fff;
+}
