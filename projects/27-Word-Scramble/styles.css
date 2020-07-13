@@ -3,3 +3,25 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.message {
+  font-size: 1.5rem;
+}
+
+.message1 {
+  margin: 0;
+  letter-spacing: 1rem;
+  font-size: 2rem;
+}
