@@ -3,3 +3,55 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.clock {
+  margin-top: 10px;
+  background-color: blue;
+  /* width: 360px; */
+  /* width: 50%; */
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.clock > span {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #000;
+}
+
+.clock > span > span {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: red;
+}
+
+input {
+  padding: 15px;
+  margin: 20px;
+}
+
+/* .clock > span > span {
+  background-color: red;
+  padding: 5px 2px;
+  margin-left: 5px;
+} */
+
+/* .clock span {
+  background-color: red;
+  padding: 5px;
+}
+
+.days {
+  color: white;
+  background-color: black;
+  padding: 12px;
+} */
