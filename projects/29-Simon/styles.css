@@ -1,0 +1,56 @@
+/*  */
+/*  */
+
+/* * {
+  box-sizing: border-box;
+} */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.message {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.game-area {
+  height: 200px;
+  width: 200px;
+  /* border: 1px solid black; */
+  margin-bottom: 20px;
+}
+
+.active {
+  border: 1px solid red;
+  color: #ff0000;
+}
+
+.start-btn {
+  width: 200px;
+}
+
+.start-btn:hover {
+  width: 200px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.5rem;
+  padding: 0px 12px;
+}
+
+.box {
+  width: 50%;
+  height: 50%;
+  background-color: red;
+  color: #000;
+  display: inline-block;
+  text-align: center;
+}
