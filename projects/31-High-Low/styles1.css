@@ -4,42 +4,36 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* .main-container {
-  position: relative;
-} */
-
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* border: 1px solid black; */
-  /* position: relative; */
-}
+} */
+
+/* .gameplay {
+  border: 1px solid black;
+  position: relative;
+} */
 
 .score {
   display: inline-block;
 }
 
-.start-button {
-  padding: 6px 30px;
-}
-
-.hide-button {
+.hideButton {
   display: none;
 }
 
 .card {
-  /* position: absolute; */
-  position: relative;
+  position: absolute;
+  /* position: relative; */
   left: 0;
   top: 80px;
-  top: 0;
   display: inline-block;
-  margin: 25px 0;
+  margin: 5px 0;
   padding: 7px;
-  height: 100px;
+  height: 90px;
   width: 70px;
   background-color: whitesmoke;
   border: 1px solid black;
@@ -48,7 +42,7 @@ body {
 }
 
 .big {
-  font-size: 2rem;
+  font-size: 2em;
   text-align: center;
   line-height: 40px;
   margin: auto;
@@ -61,7 +55,7 @@ body {
 
 .tiny {
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.8em;
   line-height: 8px;
   /* vertical-align: top; */
 }
