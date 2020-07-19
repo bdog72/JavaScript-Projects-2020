@@ -4,54 +4,100 @@
 
 window.addEventListener('load', init);
 
-const container = document.querySelector('.container');
+// const container = document.querySelector('.container');
 
 const myWords = ['javascript', 'html', 'css', 'react', 'bootstrap', 'node'];
+// const myWords = ['fff1', 'ddd1', 'ccc1', 'bbbb1', 'eee1', 'aaa1'];
+
+let current = 0;
+let startTime;
 
 function init() {
   console.log(`Ready`);
-
   let div = document.createElement('div');
   div.setAttribute('class', 'message');
-  div.innerText = 'Press Start Button';
-  container.append(div);
-  // document.body.append(div);
+  div.innerText = `Press Start Button`;
+  document.body.appendChild(div);
 
   let button = document.createElement('button');
   button.type = 'button';
-  button.innerText = 'Start Game';
+  button.innerText = `Start Game`;
+  document.body.appendChild(button);
   button.addEventListener('click', start);
-  container.append(button);
-  // document.body.append(button);
 
   let div1 = document.createElement('div');
   div1.classList.add('game');
-  container.append(div1);
-  // document.body.append(div1);
+  document.body.appendChild(div1);
 }
 
 function start() {
+  current = 0;
+  startTime = Date.parse(new Date());
+  console.log(startTime);
   this.style.display = 'none';
-  myWords.sort((a, b) => {
+  let tempArr = myWords.slice(0);
+  tempArr.sort(function (a, b) {
     return 0.5 - Math.random();
   });
 
-  myWords.forEach(function (item) {
+  const game = document.querySelector('.game');
+
+  tempArr.forEach(function (item) {
     let temp = item.split('');
-    temp.sort((a, b) => {
+    temp.sort(function (a, b) {
       return 0.5 - Math.random();
     });
 
     let temp1 = temp.join('');
+    let div = document.createElement('div');
 
-    console.log(temp1);
-    // console.log(item);
+    div.innerText = 'Select';
+    div.classList.add('box');
+
+    div.style.backgroundColor = '#000';
+    div.style.color = '#fff';
+
+    div.word = item;
+
+    div.addEventListener('mouseenter', function () {
+      div.style.backgroundColor = '#fff';
+      div.style.color = '#000';
+      div.innerText = temp1;
+    });
+
+    div.addEventListener('mouseleave', function () {
+      div.style.backgroundColor = '#000';
+      div.innerText = 'select';
+    });
+
+    div.addEventListener('click', function () {
+      if (div.word === myWords[current]) {
+        console.log(`Right`);
+        this.classList.add('hidden');
+
+        current++;
+        nextWord();
+      } else {
+        console.log(`Wrong`);
+      }
+    });
+    game.appendChild(div);
   });
-
-  // console.log(myWords);
-  message(`Select this Word`);
+  nextWord();
 }
 
-const message = (output) => {
+function nextWord() {
+  if (current >= myWords.length) {
+    let endTime = Date.parse(new Date());
+    let duration = (endTime - startTime) / 1000;
+    document.querySelector('.game').innerHTML = '';
+    document.querySelector('button').style.display = 'block';
+    message(`Game Over Bozo, you played for ${duration} seconds`);
+  } else {
+    message(`Select this word ${myWords[current]}`);
+  }
+}
+
+function message(output) {
   document.querySelector('.message').innerHTML = output;
-};
+}
