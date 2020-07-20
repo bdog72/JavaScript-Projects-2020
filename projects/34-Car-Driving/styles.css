@@ -7,3 +7,55 @@ body {
 .hide {
   display: none;
 }
+
+.car {
+  position: absolute;
+  bottom: 100px;
+  /* left: 200px; */
+  margin: auto;
+  width: 50px;
+  height: 100px;
+  background-color: blue;
+}
+
+.gameArea {
+  background-color: #000;
+  width: 200px;
+  height: 100vh;
+  /* height: 100%; */
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+/* 
+.car,
+.enemy {
+  position: absolute;
+  bottom: 100px;
+  left: 200px;
+  width: 50px;
+  height: 100px;
+  margin: auto;
+  background-color: blue;
+  background-image: url('./car2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.line {
+  position: absolute;
+  height: 100px;
+  width: 10px;
+  margin-left: 95px;
+  background-color: white;
+}
+
+.gameArea {
+  background-color: #000;
+  width: 200px;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+} */
